@@ -53,10 +53,6 @@ To complet list consult requirements.txt
                 * uploads - folder to save the images
             * templates - folder to store the html file
                 * index.html - html file
-    * haarcascades
-        * haarcascade_frontalface_alt.xml - model to detect faces - from OpenCV
-        * haarcascade_frontalface_alt2.xml - model to detect faces - from OpenCV
-        * haarcascade_frontalface_default.xml - model to detect faces - from OpenCV
     * LICENSE licesing of this files, except OpenCV files
     * README.md this readme file
         
