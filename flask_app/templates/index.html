@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Dog Breed Classifier</title>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Dog breed images classifier</h1>
+            <p class="lead">This is an on-line app to identify your dog breed. Just upload an image below.</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+            	
+            <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+    		<p>
+    			<input type="file" name="file" autocomplete="off" required>
+    		</p>
+        </dl>
+        <p>
+    		<button type="submit">Load and predict</button>
+        </p>
+
+           </form>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+        </div>
+        <span class="border border-primary">
+            <div class="col-sm">
+                    <p> 
+			{% if message %}
+				<br>
+				    <img  class="img-responsive" src="{{ url_for('display_image', filename=filename) }}", 
+                                     width="300" height="300">
+				<br>
+				    <text>Id: {{ message }}</text>
+				<br>
+				    <text>Identified breed: {{ breed }}</text>
+				<br>
+				    <text>I'm {{ sureness }} % sure of this!</text>
+			{% endif %}
+                    </p>
+                {% if filename %}
+
+                {% endif %}    
+            </div>
+        </span>
+
+        <div class="col-md">
+	   <p class="text-md-center">Available at
+              <a href="https://www.github.com/edbroni" data-toggle="tooltip" title="Visit my Github"><img class="img-responsive" src="/static/GitHub_Logo.png" width="60" height="30"></a>
+	   </p>
+        </div>
+      </div>
+    </div>
+<br> 
+<style>
+
+
+footer {
+  background-color: #e9ecef;
+  color: #2d2d30;
+  padding: 32px;
+}
+</style>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap theme made By <a href="https://www.github.com/edbroni" data-toggle="tooltip" title="Visit my Github">ebroni</a></p>
+  <p>Help to handle files from <a href="https://roytuts.com/upload-and-display-image-using-python-flask/">Roy tutorials</a>
+</footer
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

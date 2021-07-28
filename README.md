@@ -45,9 +45,6 @@ To complet list consult requirements.txt
         * requirements.txt - necessary libraries to run the app
             * saved_models
                 * fastai_ResNet50_dog_breed.pkl - model to predict dog - transfer learning
-                * weights.best.transfer_learning_Resnet50.hdf5 - model to predict dog - transfer learning
-                * weights.best.from_scratch.hdf5 - model to detect dog - pre trained with imagenet dataset
-                * weights.best.VGG16.hdf5 - model pre trained with imagenet dataset
                 * haarcascade_frontalface_alt.xml - model to detect faces - from OpenCV
             * static
                 * uploads - folder to save the images
