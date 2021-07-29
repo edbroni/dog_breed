@@ -14,6 +14,7 @@
 
 This is a project for Udacity NanoDegree to deploy an app performing the following
  tasks:
+
 	-Identify human face, dog or none in an image;
 	-If human face, predict a breed of dog;
 	-If a dog, predict its breed;
