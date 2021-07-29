@@ -20,7 +20,7 @@ This is a project for Udacity NanoDegree to deploy an app performing the followi
 	-If a dog, predict its breed;
 	-Give an alert otherwise.
 
-The final app is at: [Dog breed classification](frozen-plateau-36191.herokuapp.com)
+The final app is at: [Dog breed classification](http://frozen-plateau-36191.herokuapp.com)
 
 <a name="dependencies"></a>
 ## 2 - Dependencies
