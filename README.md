@@ -15,10 +15,10 @@
 This is a project for Udacity NanoDegree to deploy an app performing the following
  tasks:
 
--Identify human face, dog or none in an image;
--If human face, predict a breed of dog;
--If a dog, predict its breed;
--Give an alert otherwise.
+ - Identify human face, dog or none in an image;
+ - If human face, predict a breed of dog;
+ - If a dog, predict its breed;
+ - Give an alert otherwise.
 
 The final app is at: [Dog breed classification](http://frozen-plateau-36191.herokuapp.com)
 
@@ -27,11 +27,11 @@ The final app is at: [Dog breed classification](http://frozen-plateau-36191.hero
 
 The python notebook were tested with python3 an the main libraries are:<br>
 
--Keras
--TensorFlow
--Pytorch
--FastAi
--Numpy
+ - Keras
+ - TensorFlow
+ - Pytorch
+ - FastAi
+ - Numpy
 
 To complet list consult requirements.txt
 
